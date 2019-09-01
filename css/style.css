@@ -1,12 +1,153 @@
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; 
+    margin: 0;
+	padding: 0;
 }
-html, body {
+html, body, main {
     margin: 0 auto;
     width: 100vw;
     height:100vh;
+    overflow:hidden;
+}
+header{
+    width:100%;
+    height:8vh;
+    position:fixed;
+    top:0;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.6);
+    z-index: 2;
+    background-color: white;
+}
+.logoBox{
+    width:20%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+.logoBox img{
+    width:100%;
+}
+.profile{
+    position: absolute;
+    right:0;
+    top:0;
+    display: flex;
+    justify-content: flex-end;
+    width:50%;
+    height:100%;
+    text-align: right;
+}
+.profile p{
+    margin-right: 5%;
+    padding-top:8%;
+    color:rgb(0,122,255);
+}
+.profile img{
+    width:7vh;
+    height: 7vh;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: .5vh 2vh .5vh .5vh;
 }
 main{
-
+}
+.dummy{
+    height:8vh;
+}
+.topBox{
+    width:100%;
+    height:30%;
+}
+.topBox video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+main aside{
+    width:100%;
+    height:10%;
+    background-image: url("../image/top.png");
+    background-size: cover;
+    position: relative;
+    margin: 1% 0;
+}
+aside p:first-child{
+    margin: 0;
+    font-size: 14px;
+    width:100%;
+    margin: 0;
+    position: absolute;
+    top:0;
+    left:10px;
+}
+aside p:nth-child(2){
+    margin: 0;
+    font-size: 14px;
+    width:100%;
+    margin: 0;
+    position: absolute;
+    bottom:0;
+    left:10px;
+}
+aside p:last-child{
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    position: absolute;
+    right:10px;
+    bottom:1%;
+}
+aside p:last-child span{
+    font-size: 35px;
+}
+article{
+    width:90%;
+    height:auto;
+    margin : 10px 5% 0 5%;
+    position: relative;
+}
+article:before {
+    content: "";
+    display: block;
+    padding-top: 62%;
+}
+article a{
+    width:45%;
+    height:auto;
+    position: absolute;
+}
+article a img{
+    width:100%;
+    filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.6));
+    position: absolute;
+    top:0;
+    left:0;
+}
+article a img:hover{
+    top:2px;
+    left:2px;  
+    filter:none;  
+}
+article a:nth-child(1){
+    top:0;
+    left:0;
+}
+article a:nth-child(2){
+    top:0;
+    right:0;
+}
+article a:nth-child(3){
+    top:50%;
+    right:0;
+}
+article a:nth-child(4){
+    bottom:0;
+    left:0;
+}
+article a:nth-child(5){
+    bottom:0;
+    right:0;
 }
